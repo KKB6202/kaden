@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+      /*background-color: #333;*/
+    }
+    header img {
+        width: 100px; /* Adjust the width of the profile picture */
+        height: 100px; /* Adjust the height of the profile picture */
+        border-radius: 40%;
+        margin-left: 50px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        align-items: 120px;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 115px 15px 20px;
+    display: block;
+    font-size: 20px;
+}
+
+    nav ul li:hover {
+        background-color: #555;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 600px; /* Adjust height as needed */
+        background-image: url('background.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+        background-size: cover;
+        background-position: center;
+    }
+    .contact-bar {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact-bar .container {
+        display: flex;
+        align-items: center;
+    }
+    .contact-bar .email {
+        padding-left: 20px;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <img src="Picture.jpg" alt="Profile Picture"> <!-- Replace 'your-profile-image-url.jpg' with your profile image URL -->
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#about">About</a>
+                    <div class="dropdown-content">
+                        <a href="#about-me">About Me</a>
+                        <a href="#campaign">Campaign</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#vision">Vision</a>
+                    <div class="dropdown-content">
+                        <a href="#vision">Vision</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#experience">Experience</a>
+                    <div class="dropdown-content">
+                        <a href="#trips">Trips</a>
+                        <a href="#competitions">Competitions</a>
+                        <a href="#skills">Skills</a>
+                    </div>
+                </li>
+                <li><a href="#endorsements">Endorsements</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="image-container">
+    <!-- Optional content or nothing -->
+</div>
+
+<div class="contact-bar">
+    <div class="container">
+        <div class="email">Contact: kadenhaggarddeca@gmail.com</div>
+    </div>
+    <div class="profile-img"></div>
+</div>
+
+<!-- Your content goes here -->
+
+</body>
+</html>
