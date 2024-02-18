@@ -16,10 +16,9 @@
         padding: 20px 0;
         display: flex;
         align-items: center;
-      /*background-color: #333;*/
     }
     header img {
-        width: 100px;
+        width: 100px; 
         height: 100px; 
         border-radius: 40%;
         margin-left: 50px;
@@ -62,6 +61,8 @@
         z-index: 1;
         left: 50%;
         transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
     }
     .dropdown-content a {
         color: #fff;
@@ -71,12 +72,13 @@
     }
     .dropdown:hover .dropdown-content {
         display: block;
+        opacity: 1;
     }
     .image-container {
         position: relative;
         width: 100%;
         height: 600px; 
-        background-image: url('background.jpg'); 
+        background-image: url('Media/background.jpg'); 
         background-size: cover;
         background-position: center;
     }
@@ -97,12 +99,75 @@
         padding-left: 20px;
     }
 
+    #about-me {
+        background-color: #dddddd90; 
+        border: 2px solid #b1b1b1; 
+        padding: 20px;
+        margin: 20px;
+        border-radius: 50px;
+        text-align: justify;
+    }
+   
+    #campaign {
+        background-color: #ffffff90; 
+        border: 2px solid #ffffff; 
+        padding: 20px;
+        margin: 20px;
+        border-radius: 50px;
+        text-align: justify;
+    }
+    #campaign video {
+        width: 100%;
+        height: auto;
+    }
+   
+    #vision {
+        background-color: #dddddd90; 
+        border: 2px solid #b1b1b1; 
+        padding: 20px;
+        margin: 20px;
+        border-radius: 50px;
+        text-align: justify;
+    }
+
+    .vision-box {
+        background-color: #ffffff;
+        border: 2px solid #b1b1b1; 
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    .vision-box h3 {
+        margin-top: 0;
+    }
+
+/* ADD OR REMOVE ASK KADEN */
+  /*
+    #mission {
+        background-color: #dddddd90; 
+        border: 2px solid #b1b1b1; 
+        padding: 20px;
+        margin: 20px;
+        border-radius: 50px;
+        text-align: justify;
+    }
+
+    .mission-box {  
+        background-color: #ffffff; 
+        border: 2px solid #b1b1b1; 
+        padding: 20px;
+        border-radius: 20px;
+    }
+*/
+/* ADD OR REMOVE ASK KADEN */
+
 </style>
 </head>
 <body>
 
 <header>
-    <img src="Picture.JPG" alt="Profile Picture"> 
+    <img src="Media/Picture.JPG" alt="Profile Picture">
     <div class="container">
         <nav>
             <ul>
@@ -134,7 +199,7 @@
     </div>
 </header>
 
-<div class="image-container">
+    <div class="image-container">
 </div>
 
 <div class="contact-bar">
@@ -143,5 +208,54 @@
     </div>
     <div class="profile-img"></div>
 </div>
-</body>
-</html>
+
+<!-- About Me -->
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>Hi my name is Kaden Haggard. I have been a member of DECA for 4 years and am currently serving as the VP of Leadership for Oak Grove High School DECA. As VP of District 4, it is my goal to prepare chapters to feel empowered to gain the most of what DECA has to offer. I also want to show all members the importance of taking control of your future. During my time in DECA, I have advanced to compete at ICDC, as well as placed first in the JEFCOED Navigator’s Cup marketing series. Outside of DECA, I enjoy working closely with my school’s marketing team, performing with the OGHS Marching band, and serving younger students through our peer helper program. </p>
+</section>
+
+<!-- Campaign -->
+<section id="campaign">
+    <video controls style ="border: 1px solid #000; border-radius: 20px;">
+        <source src="Media/Campaign.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<!-- Vision -->
+<section id="vision">
+    <div class="container">
+        <div id="vision-content">
+            <h2>Vision: Plans for ALDECA</h2>
+            <div class="vision-box">
+                <h3>Communication</h3>
+                <p>Provide resources to chapters to get the most of what DECA has to offer..</p>
+            </div>
+            <div class="vision-box">
+                <h3>Leadership Development</h3>
+                <p> Empower students to take charge of their future and become aspiring leaders.
+                </p>
+            </div>
+            <div class="vision-box">
+                <h3>Training Initiatives</h3>
+                <p> Visit chapters regularly, ensuring that chapters are well equipped to lead.
+                </p>
+            </div>
+            <div class="vision-box">
+                <h3>Innovation</h3>
+                <p>Encourage creative thinking within DECA chapters, preparing students for competition and real world challenges</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Mission Statement -->
+<section id="mission">
+    <div class="container">
+        <div class="mission-box">
+            <h2>Mission Statement</h2>
+            <p>It is my mission to pass-on a positive example of self-belief. I will ensure my interactions with others reflect upon me and align with who I strive to be. I will commit my career to showing others the importance of service to and the impact you will leave behind.</p>
+        </div>
+    </div>
+</section>
+
