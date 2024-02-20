@@ -60,10 +60,12 @@
         padding: 15px 115px 15px 20px;
         display: block;
         font-size: 20px;
+        transition: all 0.3s ease;
     }
 
     nav ul li:hover {
         background-color: #555;
+        box-shadow: 0 0 10px 3px #0086df;
     }
     .dropdown-content {
         display: none;
@@ -244,6 +246,101 @@
         border: 2px solid #000; 
         border-radius: 20px; 
     }
+    
+/* Projects */
+#projects {
+    background-color: #dddddd90;
+    border: 2px solid #b1b1b1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    text-align: justify;
+}
+
+#projects-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border: 2px solid #b1b1b1;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 10px 20px 0;
+    position: relative;
+}
+
+.project-box:last-child {
+    margin-right: 0;
+}
+
+.project-box h3 {
+    margin-top: 0;
+    font-size: 24px; /* Increase font size */
+}
+
+.project-media img {
+    width: 200px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+    border: 2px solid #000; /* Add border */
+}
+
+.project-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Center the images horizontally */
+}
+
+.project-media h4 {
+    font-size: 25px; /* Adjust font size */
+    text-align: left;
+}
+
+
+
+.image-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center; /* Align the title in the center */
+}
+
+.image-right img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.project-box {
+    position: relative;
+}
+
+.project-box h3 {
+    margin-bottom: 10px; /* Add some spacing between title and image */
+}
+
+.image-right img {
+    width: 200px; /* Adjust the width to make the image bigger */
+    height: 200px; /* Maintain the aspect ratio */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+.endorsements {
+    margin-left: auto; /* This will push it to the right */
+}
+
 </style>
 
 
@@ -257,31 +354,23 @@
                 <li><a href="#home">Home</a></li>
                 <li class="dropdown">
                     <a href="#about-me">About</a> 
-                    <div class="dropdown-content">
-                        <a href="#about-me">About Me</a> 
-                        <a href="#campaign">Campaign</a>
-                    </div>
+                    <div class="dropdown-content"></div>
                 </li>
-                
                 <li class="dropdown">
                     <a href="#vision">Vision</a>
-                    <div class="dropdown-content">
-                        <a href="#vision">Vision</a>
-                    </div>
+                    <div class="dropdown-content"></div>
                 </li>
                 <li class="dropdown">
                     <a href="#experience">Experience</a>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li><a href="#trips">DECA Trips</a></li>
-                            <li><a href="#competitions">Competitions</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                        </ul>
-                    </div>
+                    <div class="dropdown-content"></div>
                 </li>
-                <li><a href="#endorsements">Endorsements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li class="endorsements"><a href="#endorsements">Endorsements</a></li>
             </ul>
         </nav>
+        
+        
+        
     </div>
 </header>
 
@@ -373,6 +462,8 @@
             <div class="experience-box">
                 <h3>Competitions</h3>
                 <ul>
+                    <li>Litter Quitter 2022</li>
+                    <li>Litter Quitter 2023</li>
                     <li>CDC 2023</li>
                     <li>Navigator's Cup 2023</li>
                     <li>ICDC 2023</li>
@@ -395,6 +486,43 @@
         </div>
     </div>
 </section>
+
+<!-- Projects -->
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div id="projects-content" class="projects-flex-container">
+            <div class="project-box">
+                <h3>Litter Quitters 2022/23</h3>
+                <div class="project-media">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/zgZgTRiEHKY?si=7LDZLSxKeX7f9cdB" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/BGnQq8eG9fQ?si=vbyrhR40XX9NPTR0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="project-box">
+                <h3>Navigator's Cup</h3>
+                <div class="project-media">
+                    <img src="NavCup.png" alt="Social Media Campaign">
+                    <div class="project-media">
+                        <h4>Personal Project</h4>
+                        <img src="bren.png" alt="bren">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box">
+                <h3>OGHS Social Media Posts</h3>
+                <div class="project-media">
+                    <img src="SMP1.png" alt="OGHS Social Media Post">
+                    <img src="SMP2.png" alt="OGHS Social Media Post">
+                    <img src="SMP3.png" alt="OGHS Social Media Post">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 
 <!-- Endorsements -->
@@ -543,3 +671,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 </body>
 </html>
+
