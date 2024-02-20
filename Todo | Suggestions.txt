@@ -6,3 +6,4 @@ TODO:
 
 SUGGESTIONS:
 *Remove the dropdowns in the Header and just keep the 
+*Make it look not like trash
